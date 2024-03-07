@@ -39,8 +39,8 @@
             button9 = new Button();
             buttonPlus = new Button();
             buttonEqual = new Button();
-            boxHasil = new TextBox();
             button0 = new Button();
+            boxHasil = new Label();
             SuspendLayout();
             // 
             // button1
@@ -153,15 +153,6 @@
             buttonEqual.UseVisualStyleBackColor = true;
             buttonEqual.Click += buttonEqual_Click;
             // 
-            // boxHasil
-            // 
-            boxHasil.Enabled = false;
-            boxHasil.Location = new Point(83, 46);
-            boxHasil.Name = "boxHasil";
-            boxHasil.Size = new Size(229, 23);
-            boxHasil.TabIndex = 12;
-            boxHasil.TextChanged += boxHasil_TextChanged;
-            // 
             // button0
             // 
             button0.Location = new Point(130, 177);
@@ -172,13 +163,21 @@
             button0.UseVisualStyleBackColor = true;
             button0.Click += button0_Click;
             // 
+            // boxHasil
+            // 
+            boxHasil.AutoSize = true;
+            boxHasil.Location = new Point(83, 50);
+            boxHasil.Name = "boxHasil";
+            boxHasil.Size = new Size(0, 15);
+            boxHasil.TabIndex = 14;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(405, 227);
-            Controls.Add(button0);
             Controls.Add(boxHasil);
+            Controls.Add(button0);
             Controls.Add(buttonEqual);
             Controls.Add(buttonPlus);
             Controls.Add(button9);
@@ -209,7 +208,7 @@
         private Button button9;
         private Button buttonPlus;
         private Button buttonEqual;
-        private TextBox boxHasil;
         private Button button0;
+        private Label boxHasil;
     }
 }
